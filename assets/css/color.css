@@ -1,0 +1,218 @@
+/*	CONFIG
+	====== */
+/*	LAYOUT
+	====== */
+/*	Site breakpoints
+	----------------- */
+/*	Tell Jeff to add to config
+	-------------------------- */
+/*	Up until this point, the search box will be positioned
+	over the masthead, so as not to overlap it. This point
+	depends on how wide the site masthead is. Keep increasing it
+	until the search box no longer overlaps the masthead.
+*/
+/* end Jeff add ------------ */
+/*	TYPOGRAPHY
+	========== */
+/*	COLORS
+	====== */
+/*	Basic link colors
+	----------------- */
+/* $linkColorVisited: #AB9F84; */
+/*	Google search-results-specific colors
+	------------------------------------- */
+/* The color of the URL that appears below each result title */
+/* Currently being overridden by something in Google's default CSS */
+/* The numbers that represent pages of search results */
+/*	Basic button bg colors
+	----------------- */
+/*	Mobile search colors
+	-------------------- */
+/*	Mobile menu colors
+	------------------ */
+/*	Mobile search and menu colors
+	----------------------------- */
+/* The background color of a button, when activated */
+/*	Mobile search colors
+	-------------------- */
+/* The background of the "Vassar College" area */
+/* The background of the search and menu buttons */
+/* The color of the search icon and Menu text */
+/* The color of the space between search and menu */
+.ac-visuallyHidden {
+  border: 0 !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px !important;
+  padding: 0 !important;
+  overflow: hidden;
+  position: absolute !important;
+  width: 1px !important; }
+
+.noBullets {
+  margin: 0;
+  padding: 0; }
+
+.noBullets li {
+  list-style: none; }
+
+/*	COLOR
+	===== */
+a {
+  text-decoration: none;
+  border: none; }
+
+a, a:link {
+  color: #D96729; }
+
+a:visited {
+  color: #8C614A; }
+
+a:hover, a:active {
+  color: #29C1D9; }
+
+html {
+  background: #000 url("../images/css/background-bw.jpg") no-repeat fixed;
+  background-size: contain; }
+
+.u-Masthead__vassar {
+  background: transparent; }
+
+@media all and (min-width: 800px) {
+  html {
+    background: #000 url("../images/css/background-bw.jpg") no-repeat fixed;
+    background-size: cover; } }
+a.u-Masthead__siteName--link,
+a.u-Masthead__vassar--link {
+  color: rgba(255, 100, 118, 0.6);
+  color: #fff; }
+
+.u-lContent {
+  background: #fff; }
+
+@media all and (min-width: 800px) {
+  .u-Masthead__vassar {
+    position: relative !important; } }
+/*
+.u-lAside {
+	color: #ddd;
+}
+	.u-lAside a {
+		color: #ddd;
+	}
+*/
+.u-lMain {
+  background: #fff; }
+
+tbody tr:nth-child(odd) {
+  background-color: #e7e7e7; }
+
+tbody td,
+tbody th {
+  border: 1px solid #ccc; }
+
+@media all and (min-width: 600px) {
+  .u-Search__field,
+  .u-Search__submit {
+    background: transparent;
+    border: none; }
+
+  .u-Search__form {
+    border: 1px solid #aaa;
+    border: 1px solid rgba(0, 0, 0, 0.2); }
+
+  .u-Search__submit svg {
+    fill: #888; }
+
+  #navigation:target .u-NavSite__level--1 {
+    background: rgba(0, 0, 0, 0.5); } }
+@media all and (min-width: 1024px) {
+  .u-Search__field,
+  .u-Search__submit {
+    background: transparent;
+    border: none; } }
+/*	Masthead
+	-------- */
+.u-Masthead__vassar--link {
+  color: rgba(255, 255, 255, 0.6);
+  text-transform: uppercase;
+  letter-spacing: 1px; }
+
+.u-Masthead__siteName--link,
+.u-Masthead__vassar--link {
+  transition: color 1s ease; }
+
+.u-Masthead__siteName--link:hover,
+.u-Masthead__vassar--link:hover {
+  color: rgba(255, 255, 255, 0.1); }
+
+@media all and (min-width: 600px) {
+  .u-Search__submit {
+    color: #ddd;
+    background: transparent; } }
+/*	News
+	---- */
+.u-ArticleListItem .u-ArticleListItem__link {
+  color: #000; }
+
+.u-ArticleListItem .u-ArticleListItem__link:hover {
+  color: #888; }
+
+/*	Navigation
+	---------- */
+.u-NavSite__level .u-NavSite__level {
+  border-left: 1px solid rgba(255, 255, 255, 0.4);
+  margin-bottom: .15em; }
+
+.u-NavSite__level .u-NavSite__item,
+.u-NavSite__level .u-NavSite__item:link,
+.u-NavSite__level .u-NavSite__item:visited {
+  color: #aaa; }
+
+.u-NavSite__level .u-NavSite__item.u-NavSite__item--isCurrent,
+.u-NavSite__level .u-NavSite__item:hover,
+.u-NavSite__level .u-NavSite__item:active {
+  color: #fff;
+  text-shadow: 0 0 40px #fff; }
+
+.u-NavSite__item.u-NavSite__item--facebook.icon-facebook,
+.u-NavSite__item.u-NavSite__item--twitter.icon-twitter {
+  color: #888; }
+
+.u-NavSite__item.u-NavSite__item--facebook:hover,
+.u-NavSite__item.u-NavSite__item--twitter:hover {
+  color: #fff; }
+
+.u-NavSite {
+  overflow: hidden; }
+
+.u-NavSite__level--1 {
+  box-shadow: 0 0 60px 0 black;
+  -webkit-box-shadow: 0 0 60px 0 black;
+  -moz-box-shadow: 0 0 60px 0 black;
+  background: rgba(0, 0, 0, 0.5); }
+
+/*	Sidebar modules
+	--------------- */
+.Module__header {
+  border-bottom: 2px solid #eee;
+  padding-bottom: .25em; }
+
+/*	Footer
+	------ */
+.u-lFooter {
+  color: #888; }
+
+/*	Search
+	------ */
+.u-Search__submit {
+  background: #444; }
+
+@media all and (min-width: 600px) {
+  .u-Search__submit {
+    background: none; } }
+/*	Social
+	------ */
+.u-NavSite__item.u-NavSite__item--twitter,
+.u-NavSite__item.u-NavSite__item--facebook {
+  color: #aaa !important; }

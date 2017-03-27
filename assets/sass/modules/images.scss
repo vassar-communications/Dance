@@ -1,0 +1,27 @@
+@import "_imports";
+
+.u-lAside .u-Figure {
+	margin: 0 0 10%;
+	width: 100%;
+	img {
+		width: 100%;
+	}
+}
+
+.u-lAside .u-Figure__caption,
+.u-Figure__caption {
+	font-size: 1em;
+	line-height: 1.2;
+	font-weight: $fontWeightNormal;
+	font-family: $serif;
+}
+
+.u-Gallery__link {
+	font-size: inherit;
+	line-height: inherit;
+	display: block;
+}
+
+.iconDecorative--images:before, .iconDecorative-images:before {
+	display: none;
+}

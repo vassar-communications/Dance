@@ -1,0 +1,30 @@
+@import "_imports";
+.u-lFooter {
+	
+	.u-VCard--site {
+		text-align: center;
+
+		li {
+			display:block;
+			margin-bottom: .4em;
+		}
+
+	}
+}
+
+@media all and (min-width: $small) {
+	.u-lFooter {
+		.u-VCard--site {
+			li {
+				display:inline-block;
+			}	
+			.u-List__itemContainer {
+				margin-right: .8em;
+			}
+			.u-List__itemContainer:last-child {
+				margin-right: 0;
+			}
+		}
+	}
+}	
+	

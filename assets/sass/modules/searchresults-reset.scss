@@ -1,0 +1,174 @@
+@import "_imports";
+
+
+/*
+
+ - Remove weird colors
+ - Upload to Offices
+ - Add to Starter
+ - Get it displaying
+
+*/
+
+
+/*	override classes
+	---------------	*/
+
+.fontNormal {
+	font-weight: normal !important;
+}
+.noMargin {
+	margin: 0 !important;
+}
+.noPadding {
+	padding: 0 !important;
+}
+.noBorder {
+	border: 0 !important;
+}
+.noBackground {
+	background-color: transparent !important;
+}
+.noBorder {
+	border-color: transparent!important;
+}
+
+
+
+
+/*	overrides
+	--------- */
+
+.cse .gs-webResult .gs-visibleUrl, .gs-webResult .gs-visibleUrl, .cse .gs-webResult .gs-visibleUrl-short, .gs-webResult .gs-visibleUrl-short, .gs-imageResult .gs-visibleUrl, .gs-imageResult .gs-visibleUrl-short {
+	@extend .fontNormal;
+}
+td.gsc-table-cell-thumbnail.gsc-thumbnail,
+.gs-image img.gs-image {
+	@extend .noMargin;
+	@extend .noPadding;
+}
+.gcsc-branding,
+.gsc-resultsHeader {
+	display: none;
+}
+.gsc-result .gs-title {
+	height: auto !important;
+	overflow: visible !important;
+}
+.gsc-control-cse {
+	@extend .noPadding;
+	@extend .noBackground;
+}
+.gsc-webResult.gsc-result {
+	@extend .noBorder;
+	@extend .noBackground;
+}
+.gsc-control-cse,
+.gsc-results-wrapper-visible table,
+.gsc-table-result,
+.gsc-thumbnail-inside,
+.gsc-url-top,
+.cse .gsc-webResult.gsc-result,
+.gsc-webResult.gsc-result,
+.gsc-imageResult-classic,
+.gsc-imageResult-column,
+.gsc-result .gs-title {
+	@extend .noMargin;
+	@extend .noPadding;
+	@extend .noBorder;
+}
+.gsc-cursor-box.gs-bidi-start-align,
+.gsc-results .gsc-cursor-box .gsc-cursor-page {
+	@extend .noMargin;
+}
+.gsc-control-wrapper-cse a {
+	text-decoration: none;
+	/*link-colors($normal, $hover, $active, $visited, $focus)*/
+	@include link-colors($linkColor, $linkColorHover, $linkColorVisited, $linkColorActive, $linkColorActive);
+}
+.gsc-control-cse .gs-result .gs-title,
+.gsc-control-cse .gs-result .gs-title b,
+.gs-snippet,
+.gsc-above-wrapper-area-container {
+	text-decoration: none!important;
+	font-size: 1rem!important;
+	font-family: $sans-serif!important;
+	font-weight: 500!important;
+	font-style: normal!important;
+}
+.gsc-table-cell-snippet-open,
+.gsc-table-cell-snippet-close {
+	margin: 0;
+	padding: 0;
+}
+.gs-webResult.gs-result a.gs-title:link b,
+.gs-imageResult a.gs-title:link b,
+.gs-webResult.gs-result a.gs-title:visited b,
+.gs-imageResult a.gs-title:visited b,
+.gsc-control-cse .gs-result .gs-title b {
+	font-weight: inherit !important;
+	font-size: inherit !important;
+	color: $gsSearchTermHighlighted;
+}
+
+
+.gsc-control-cse .gs-result .gs-title:visited,
+.gsc-control-cse .gs-result .gs-title b:visited,
+.gs-snippet:visited,
+.gsc-above-wrapper-area-container:visited {
+  color: $linkColor !important;
+}
+
+.gsc-control-cse .gs-result .gs-title:focus,
+.gsc-control-cse .gs-result .gs-title b:focus,
+.gs-snippet:focus,
+.gsc-above-wrapper-area-container:focus {
+  color: $linkColor !important;
+}
+
+.gsc-control-cse .gs-result .gs-title:hover,
+.gsc-control-cse .gs-result .gs-title b:hover,
+.gs-snippet:hover,
+.gsc-above-wrapper-area-container:hover {
+  color: $linkColor !important;
+}
+
+.gsc-control-cse .gs-result .gs-title:active,
+.gsc-control-cse .gs-result .gs-title b:active,
+.gs-snippet:active,
+.gsc-above-wrapper-area-container:active {
+  color: $linkColor !important;
+}
+.gs-snippet,
+.gsc-above-wrapper-area-container {
+/*	font-size: .833rem!important; */
+	font-weight: normal !important;
+}
+.gs-snippet,
+.gsc-above-wrapper-area-container {
+/*	font-size: .833rem!important; */
+	font-weight: normal !important;
+}
+.gsc-results-wrapper-visible td,
+.gsc-results-wrapper-visible th {
+	@extend .noBorder;
+}
+.gsc-selected-option-container {
+	min-width: 70px!important;
+}
+.gsc-result-info {
+	@extend .noPadding;
+}
+.gsc-control-cse tr:nth-child(2n+1) {
+	@extend .noBackground;
+}
+
+
+
+.gsc-results .gsc-cursor-box .gsc-cursor-current-page {
+	background: #eee !important;
+	text-shadow: none !important;
+	font-weight: normal !important;
+}
+
+

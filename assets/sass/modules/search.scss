@@ -1,0 +1,54 @@
+@import "_imports";
+/*	Search
+	------
+*/
+
+$searchPositionTop: 2rem;
+$searchPositionRight: 2rem;
+
+
+@media all and (min-width: $small) {
+/*	#search:target .u-Search__submit {
+		@include v-pixel-fallback("right", $mobileHeaderButtonWidth);
+	}
+*/	.u-Search__form:before {
+		border: none;
+	}
+	.u-Search__button, .u-Search__cancel {
+		display: none;
+	}
+	.u-Search__field {
+		width: 80%;
+	}
+	.u-Search__submit,
+	.u-Search__submit:focus {
+		left: auto;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		position: absolute;
+		width: 20%;
+		@include v-pixel-fallback("font-size", 1rem);
+	}
+	.ac-NavAnchor--menu {
+		position: absolute;
+		visibility: hidden;
+		width: 1px;
+		height: 1px;
+	}
+	#search:target {
+		@include v-pixel-fallback("height", 2rem);
+	}
+	#search {
+		max-height: none;
+		@include v-pixel-fallback("height", 2rem);
+	}
+}
+@media all and (min-width: $pointAtWhichSearchMovesToRight) {
+	.u-Search__button, .u-Search__cancel {
+		display: none;
+	}
+	#search {
+		max-height: none;
+	}
+}

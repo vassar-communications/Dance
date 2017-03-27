@@ -1,0 +1,64 @@
+
+
+/* u-NewsTools in sidebar this class was previously in news-base.css */
+.icon_rss_link {
+	background: url(http://collegerelations.vassar.edu/centralincludes/css/icons/main_icons/rss_large.gif) no-repeat;
+	width: 32px;
+	height: 32px;
+	display: inline-block;
+	padding: 0;
+	margin: 0;
+	line-height: 0;
+	border: none;
+}
+
+/* this class should be removed from the u-NewsTools sidebar markup and replaced with .icon-mail which is already centralized */
+.icon-envelope:before {
+	content: "\45\6d\61\69\6c";
+}
+
+/* these styles are meant to correspond with the classes added to the markup around images added to the body of a page via the CMS */
+.u-Figure { 
+	margin:  2.5%; 
+}
+
+.u-Figure__caption { 
+	margin-top: 2.5%; 
+}
+
+.u-Figure--full { 
+	margin: 2.5% 0;
+ 	width: 100%;	
+}
+
+.u-Figure--left { 
+	float: left; 
+	margin: .3em 2.5% 2.5% 0; 
+}
+
+.u-Figure--right { 
+	float: right; 
+	margin: .3em 0 2.5% 2.5%; 
+}
+
+.u-Figure--half { 
+	width: 47.25%; 
+}
+
+.u-Figure--third { 
+	width: 30.83%; 
+}
+
+.u-Figure--quarter { 
+	width: 22.5%; 
+}
+
+.u-Figure--center { 
+	margin: 2.5% auto; 
+}
+
+/* This news specifi class could be replaced with .u-Figure--left above */ 
+.u-ArticleListItem__thumbnail {
+	float: left;
+	margin: 0 2.5% 2.5% 0;
+}

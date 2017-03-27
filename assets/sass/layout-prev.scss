@@ -1,0 +1,151 @@
+
+/*	LAYOUT
+	====== */
+
+/*	apply a natural box layout model to all elements
+	www.paulirish.com/2012/box-sizing-border-box-ftw/ */
+
+/* This box layout is already included in basic.scss - redundant? */
+
+*,
+*:before,
+*:after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.u-lFooter {
+	clear: both;
+}
+/*.u-pageTitle:nth-of-type(1) {
+	display: none;
+}*/
+h2 {
+	margin-top: 0;
+}
+.u-Container {
+/*	padding: 8%; */
+	position: relative;
+}
+.u-lHeader {
+	padding: 2%;
+	padding-bottom: .75rem;
+}
+.u-lFooter {
+	padding: 4% 2%;
+	margin-top: 2rem;
+}
+.u-lHeader,
+.u-lMain,
+.u-lFooter {
+/*	padding: 2.5% 0; */
+}
+.u-lAside {
+	padding-right: 0;
+}
+.galleria--content {
+	margin: 0 0 2.5%;
+}
+.u-NavSite,
+.u-lContent,
+.u-lAside {
+	padding: 4%;
+}
+
+/*	SMALL
+	----- */
+
+@media all and (min-width: $small) {
+	.u-lMain {
+		width: 70%;
+		float: right;
+/*		padding: 2%; */
+	}
+	.u-lContent,
+	.u-lAside {
+		padding: 4%;
+	}
+	.u-NavSite {
+		width: 30%;
+		float: left;
+		padding: 3%;
+	}
+	.u-lHeader {
+		padding-top: 2rem;
+	}
+}
+
+/*	MEDIUM
+	------ */
+
+@media all and (min-width: $medium) {
+	html {
+		padding: 2%;
+	}
+	.u-lMain {
+		width: 76%;
+	}
+	.u-NavSite {
+		width: 24%;
+	}
+	.u-Container {
+		padding-top: 6%;
+		padding-bottom: 6%;
+	}
+}
+
+/*	LARGE
+	----- */
+
+@media all and (min-width: $large) {
+	body {
+		max-width: 1200px;
+		margin: 0 auto;
+	}
+	.u-lAside {
+/*		padding: 0; */
+		width: 30%;
+		float: right;
+/*		padding: 2%; */
+	}
+	.u-lContent {
+/*		padding: 0; */
+		width: 70%;
+		float: left;
+	}
+}
+
+@media all and (min-width: $small) and (max-width: $pointAtWhichSearchMovesToRight) {
+	.u-lHeader {
+		padding-top: 4rem;
+		padding-bottom: 1.75rem;
+	}
+}
+
+
+/*	Dance-specific */
+@media all and (min-width: $small) {
+	html {
+		padding: 0;
+	}
+}
+@media all and (min-width: $medium) {
+	.u-Masthead__siteName {
+		margin-top: 3% !important;
+		margin-bottom: .1em;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

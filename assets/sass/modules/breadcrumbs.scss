@@ -1,0 +1,39 @@
+@import "_imports";
+/*	Breadcrumbs
+	-----------
+*/
+
+.u-BreadCrumbs {
+	display: block;
+	display: inline-block;
+	padding-bottom: .25em;
+	clear: both;
+	margin-bottom: 1.75em;
+/*	border-bottom: 1px solid #eee; */
+}
+.u-BreadCrumbs .u-BreadCrumbs__item {
+	font-family: $sans-serif;
+	@include v-pixel-fallback("font-size", 1rem);
+	border: none;
+	color: #666;
+}
+	.u-BreadCrumbs__item:hover {
+		color: #000;
+	}
+.u-BreadCrumbs__item:before {
+	content: "\25B6";
+	font-size: .5em;
+	margin-left: 1em;
+	margin-right: 1em;
+	color: #ccc;
+}
+	.u-BreadCrumbs__item:first-child:before {
+		content: none;
+		margin: 0;
+	}
+.u-BreadCrumbs {
+/*	@extend .font-smoothing; */
+}
+.u-BreadCrumbs__item {
+	font-size: .9em;
+}

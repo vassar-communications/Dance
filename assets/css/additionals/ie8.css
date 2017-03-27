@@ -1,0 +1,21 @@
+@media \0screen {
+  .u-lHeader {
+    float: left;
+    position: relative;
+    width: 18em;
+  }
+
+  .u-Masthead__siteName {
+    font-size: 8em;
+  }
+
+  .u-Masthead__vassar {
+    position: relative;
+  }
+
+  .u-Search__form {
+    position: relative;
+    height: 2em;
+    background: #fff;
+  }
+}

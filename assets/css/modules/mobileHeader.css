@@ -1,0 +1,456 @@
+/*	CONFIG
+	====== */
+/*	LAYOUT
+	====== */
+/*	Site breakpoints
+	----------------- */
+/*	Tell Jeff to add to config
+	-------------------------- */
+/*	Up until this point, the search box will be positioned
+	over the masthead, so as not to overlap it. This point
+	depends on how wide the site masthead is. Keep increasing it
+	until the search box no longer overlaps the masthead.
+*/
+/* end Jeff add ------------ */
+/*	TYPOGRAPHY
+	========== */
+/*	COLORS
+	====== */
+/*	Basic link colors
+	----------------- */
+/*	Google search-results-specific colors
+	------------------------------------- */
+/* The color of the URL that appears below each result title */
+/* Currently being overridden by something in Google's default CSS */
+/* The numbers that represent pages of search results */
+/*	Basic button bg colors
+	----------------- */
+/*	Mobile search colors
+	-------------------- */
+/*	Mobile menu colors
+	------------------ */
+/*	Mobile search and menu colors
+	----------------------------- */
+/* The background color of a button, when activated */
+/*	Mobile search colors
+	-------------------- */
+/* The background of the "Vassar College" area */
+/* The background of the search and menu buttons */
+/* The color of the search icon and Menu text */
+/* The color of the space between search and menu */
+.ac-visuallyHidden {
+  border: 0 !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px !important;
+  padding: 0 !important;
+  overflow: hidden;
+  position: absolute !important;
+  width: 1px !important;
+}
+
+.noBullets {
+  margin: 0;
+  padding: 0;
+}
+
+.noBullets li {
+  list-style: none;
+}
+
+/*	Don't modify these	*/
+/*	Use REMs	*/
+/*	MobileHeader
+
+
+	============
+	
+	Contains the styling for the search, navigation dropdown, and Vassar link at smaller screen sizes
+	*/
+/*	Masthead
+	-------- */
+.u-Masthead__vassar {
+  height: 4rem;
+  font-size: 16px;
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding-left: 16px;
+  padding-left: 1rem;
+  width: 100%;
+  display: table;
+  background: #000;
+}
+
+.u-Masthead__vassar--link {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+/*	Put this in a masthead file */
+@media all and (min-width: 600px) {
+  .u-Masthead__vassar {
+    position: static;
+    display: auto;
+    height: auto;
+    background: none;
+    width: auto;
+    padding: inherit;
+  }
+
+  .u-Masthead__vassar--link {
+    display: inline;
+  }
+
+  .u-Masthead__vassar--link.icon-back:before {
+    content: "";
+    margin: 0;
+  }
+}
+/*	Mobile search
+	------------- */
+/*	Base styles
+	........... */
+.u-Container {
+  padding-top: 4rem;
+}
+
+.u-Search__form:focus {
+  border: 4px solid #f00 !important;
+}
+
+label[for="u-Search"].ac-hiddenVisually {
+  clip: auto !important;
+  height: auto !important;
+  width: auto !important;
+  position: absolute !important;
+  top: 0;
+  bottom: 0;
+  left: -112px;
+  left: -7rem;
+  z-index: 9;
+  line-height: 4rem;
+  text-shadow: 8rem 0 0 #aaa;
+  overflow: visible !important;
+  font-family: "pragmatica-web", Helvetica, Arial;
+}
+
+#search {
+  position: absolute;
+  /*	top: 0; */
+  padding: 0;
+  background: #eee;
+}
+
+.u-Search__button {
+  position: absolute;
+  top: 0;
+  top: 0;
+  right: 56px;
+  right: 3.5rem;
+  background: #000;
+  color: #d94;
+  width: 3.5rem;
+  text-align: center;
+  border-right: 1px solid #000;
+  font-size: 28.8px;
+  font-size: 1.8rem;
+  z-index: 2;
+}
+
+.u-Search__button,
+.u-Search__cancel {
+  height: 4rem;
+  line-height: 4rem;
+}
+
+.u-Search__cancel {
+  font-size: 16px;
+  font-size: 1rem;
+}
+
+.u-Search__submit {
+  left: auto;
+  top: 0;
+  bottom: 0;
+  height: auto;
+  position: relative;
+}
+
+.u-Search__field {
+  height: auto;
+  font-family: "pragmatica-web", Helvetica, Arial;
+  width: 100%;
+  font-size: 16px;
+  font-size: 1rem;
+  padding: 2%;
+  padding: 2%;
+}
+
+.u-Search__field:focus {
+  z-index: 10 !important;
+}
+
+.u-Search__field,
+.u-Search__submit,
+.u-Search__cancel {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+}
+
+.u-Search__submit,
+.u-Search__cancel {
+  z-index: 11;
+}
+
+.u-Search__submit,
+.u-Search__field,
+input[type="search"] {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.u-Search__form:before {
+  content: "";
+  position: absolute;
+  height: 4rem;
+  border-left: 8px solid #000;
+  top: 0;
+  bottom: 0;
+  right: 7rem;
+  z-index: 9;
+}
+
+.u-Search__field:focus,
+.u-Search__submit:focus {
+  z-index: 0;
+  position: inherit;
+}
+
+.u-Search__field,
+input[type="search"],
+#search:target .u-Search__field {
+  border-radius: 0 !important;
+  -webkit-border-radius: 0 !important;
+  -moz-border-radius: 0 !important;
+}
+
+/*	When the search form is displayed
+	................................. */
+#search:target {
+  padding: 0;
+  width: 100%;
+  background: #f0f;
+  z-index: 9;
+  max-height: 64px;
+  max-height: 4rem;
+  height: 64px;
+  height: 4rem;
+}
+
+#search:target .u-Search__submit,
+#search:target .u-Search__cancel {
+  color: #f00;
+  background: #000;
+  position: absolute;
+  width: 3.5rem;
+  text-align: center;
+  padding: 0;
+  line-height: 64px;
+  line-height: 4rem;
+}
+
+#search:target .u-Search__field {
+  position: absolute;
+  left: 0;
+  border: 8px solid #000;
+}
+
+#search:target .u-Search__cancel {
+  right: 0;
+  right: 0;
+}
+
+#search:target .u-Search__submit {
+  right: 56px;
+  right: 3.5rem;
+  font-size: 28.8px;
+  font-size: 1.8rem;
+}
+
+#search:target .u-Search__submit:before {
+  position: absolute;
+  content: "";
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  border-left: 8px solid #000;
+}
+
+/*	Navigation
+	---------- */
+.ac-NavAnchor--menu {
+  position: absolute;
+  right: 0;
+  top: 0;
+  top: 0;
+  height: 4rem;
+  width: 3.5rem;
+  line-height: 4rem;
+  /*	font-size: $iconFontSize; */
+  z-index: 9;
+  background: #000;
+  text-align: center;
+  color: #d94;
+  font-family: "pragmatica-web", Helvetica, Arial !important;
+  font-size: 16px;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.u-NavSite__item {
+  font-family: "jaf-bernina-sans";
+  line-height: 110%;
+  font-weight: 100;
+  font-size: 22.4px;
+  font-size: 1.4rem;
+}
+
+.u-NavSite__itemContainer .u-NavSite__itemContainer .u-NavSite__item {
+  font-size: 19.2px;
+  font-size: 1.2rem;
+}
+
+.u-NavSite__itemContainer {
+  margin: 0;
+}
+
+.u-NavSite__itemContainer .u-NavSite__itemContainer {
+  padding-left: 0;
+}
+
+/*.u-NavSite__item {
+	@include v-pixel-fallback("padding", .25rem .75rem);
+}*/
+/* .u-NavSite__level {
+	margin-left: 1em;
+} */
+.ac-NavAnchor.ac-NavAnchor--top {
+  padding: 1em;
+  display: block;
+  text-align: center;
+}
+
+#navigation:target {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding-top: 4rem;
+  height: auto;
+  background: transparent;
+}
+
+#navigation:target .u-NavSite__level--1 {
+  background: #666;
+  margin: 0;
+  padding: 6% 4%;
+  z-index: 9999 !important;
+}
+
+#navigation:target .u-NavSite__level--1 .u-NavSite__item {
+  color: #aaa;
+}
+
+#navigation:target .ac-NavAnchor--top {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 4rem;
+  width: 3.5rem;
+  line-height: 4rem;
+  font-size: 1.8rem;
+  z-index: 9999 !important;
+  background: #666;
+  text-align: center;
+  color: #d94;
+  font-size: 1px;
+  /*	text-indent: -99em; */
+}
+
+#navigation:target .ac-NavAnchor--top:before {
+  content: "Menu";
+  content: "Close";
+  font-size: 1rem !important;
+  /*	font-family: $searchType !important; */
+  font-weight: bold;
+  margin: 0;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  line-height: 4rem;
+  font-size: 1.8rem;
+  color: #000;
+}
+
+/*#navigation:target:before {
+	content: "Menu";
+	position: absolute;
+	height: $mobileHeaderHeight;
+	@include v-pixel-fallback("font-size", 1rem);
+	font-weight: bold;
+	top: -$mobileHeaderHeight;
+	left: 0;
+	@include v-pixel-fallback("padding-left", 1rem);
+	border: 1px solid #f00;
+	line-height: $mobileHeaderHeight;
+}*/
+/*	Undo everything so it doesn't interfere with larger-screen search styling */
+@media all and (min-width: 600px) {
+  /*	Overrides stuff in search-responsive.
+  	search-responsive is centrally located. Maybe we can get rid of it
+  	in the future, but right now other sites rely on it. */
+  .u-Container {
+    padding-top: 0;
+  }
+
+  /*	Search	*/
+  #search {
+    max-height: none;
+    /*		width: auto;
+    		left: auto;
+    */
+    background-color: transparent;
+  }
+
+  .u-Search__form:before,
+  .u-Search__cancel,
+  .u-Search__button {
+    display: none;
+  }
+
+  label[for="u-Search"].ac-hiddenVisually {
+    border: 0 !important;
+    clip: rect(1px 1px 1px 1px) !important;
+    clip: rect(1px, 1px, 1px, 1px) !important;
+    height: 1px !important;
+    padding: 0 !important;
+    overflow: hidden;
+    position: absolute !important;
+    width: 1px !important;
+  }
+
+  /*	Nav	*/
+  .ac-NavAnchor--menu {
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+    overflow: hidden;
+  }
+}

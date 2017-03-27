@@ -1,0 +1,108 @@
+@import "_imports";
+
+/*	Remove this stuff after it goes in the central modules	*/
+
+
+/*	Search
+	------ */
+
+@media all and (min-width: $small) {
+	.u-Search__submit {
+		padding: 0;
+		text-align: right;
+	}
+	.u-Search__submit svg {
+		height: 2rem;
+		padding: .5rem;
+	}
+}
+
+
+
+/*	News
+	---- */
+
+.u-ArticleListItem__summary {
+	font-weight: 100;
+	font-size: .9em;
+	line-height: 1.4;
+}
+.icon-envelope:before {
+	content: "" !important;
+}
+
+
+/*	Images
+	------ */
+
+.u-Figure {
+	overflow: hidden;
+}
+
+
+/*	Modules
+	------- */
+
+.Module--sidebar .Module__title,
+.Module--sidebar .Module__desc {
+	display: block;
+}
+.Module--sidebar .Module__title {
+	font-weight: bold;
+	line-height: 1.2;
+	margin-bottom: .25em;
+}
+.Module--sidebar .Module__desc {
+	line-height: 1;
+	font-size: .8rem;
+}
+.Module__header {
+	margin-bottom: .75em;
+}
+.Module__name {
+	margin-top: 0;
+}
+.Module--sidebar.Module--image {
+	max-width: 16em;
+}
+.Module--sidebar.Module--image .u-Figure {
+	margin: 0;
+}
+@media all and (min-width: $medium) {
+	.Module--sidebar.Module--image {
+		max-width: none;
+	}
+}
+
+
+
+
+/*	Bios
+	---- */
+
+.u-BioList__name {
+	display: inline-block;
+}
+.u-Bio.u-Figure {
+	margin: 0;
+}
+.u-Bio.u-Figure img {
+	width: auto;
+	float: left;
+	margin-right: .5em;
+}
+
+/*	Nav
+	--- */
+
+.u-NavSite__level--1 {
+	position: relative;
+}
+
+
+
+body > p,
+div.myDIV,
+.myDIV {
+	display: none;
+}

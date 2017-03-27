@@ -1,0 +1,245 @@
+/*	CONFIG
+	====== */
+/*	LAYOUT
+	====== */
+/*	Site breakpoints
+	----------------- */
+/*	Tell Jeff to add to config
+	-------------------------- */
+/*	Up until this point, the search box will be positioned
+	over the masthead, so as not to overlap it. This point
+	depends on how wide the site masthead is. Keep increasing it
+	until the search box no longer overlaps the masthead.
+*/
+/* end Jeff add ------------ */
+/*	TYPOGRAPHY
+	========== */
+/*	COLORS
+	====== */
+/*	Basic link colors
+	----------------- */
+/* $linkColorVisited: #AB9F84; */
+/*	Google search-results-specific colors
+	------------------------------------- */
+/* The color of the URL that appears below each result title */
+/* Currently being overridden by something in Google's default CSS */
+/* The numbers that represent pages of search results */
+/*	Basic button bg colors
+	----------------- */
+/*	Mobile search colors
+	-------------------- */
+/*	Mobile menu colors
+	------------------ */
+/*	Mobile search and menu colors
+	----------------------------- */
+/* The background color of a button, when activated */
+/*	Mobile search colors
+	-------------------- */
+/* The background of the "Vassar College" area */
+/* The background of the search and menu buttons */
+/* The color of the search icon and Menu text */
+/* The color of the space between search and menu */
+.ac-visuallyHidden {
+  border: 0 !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px !important;
+  padding: 0 !important;
+  overflow: hidden;
+  position: absolute !important;
+  width: 1px !important; }
+
+.noBullets {
+  margin: 0;
+  padding: 0; }
+
+.noBullets li {
+  list-style: none; }
+
+@font-face {
+  font-family: 'icons';
+  src: url("//collegerelations.vassar.edu/centralincludes/gamut/v2m4p2/assets/plugins/icomoon/fonts/icon/icon.eot");
+  src: url("//collegerelations.vassar.edu/centralincludes/gamut/v2m4p2/assets/plugins/icomoon/fonts/icon/icon.eot?#iefix") format("embedded-opentype"), url("//collegerelations.vassar.edu/centralincludes/gamut/v2m4p2/assets/plugins/icomoon/fonts/icon/icon.woff") format("woff"), url("//collegerelations.vassar.edu/centralincludes/gamut/v2m4p2/assets/plugins/icomoon/fonts/icon/icon.ttf") format("truetype"), url("//collegerelations.vassar.edu/centralincludes/gamut/v2m4p2/assets/plugins/icomoon/fonts/icon/icon.svg#icons") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+.icomoon, .icomoon-arrow-right-info::after, .icomoon-more::after, .icon, .icon-arrow-right-info::after, .icon-more::after, [class*=icomoon-]::before, [class*=icon-]::before, [class*=iconDecorative--]::before, [class*=iconDecorative-]::before, [class*=iconDecorativeAfter--]::after, [class*=iconDecorativeAfter-]::after {
+  font-family: "icons" !important;
+  speak: none;
+  -webkit-font-feature-settings: "liga","dlig";
+  -moz-font-feature-settings: "liga=1, dlig=1";
+  -moz-font-feature-settings: "liga","dlig";
+  -ms-font-feature-settings: "liga","dlig";
+  -o-font-feature-settings: "liga","dlig";
+  font-feature-settings: "liga","dlig";
+  text-rendering: optimizeLegibility;
+  font-weight: normal;
+  font-style: normal;
+  font-variant: normal;
+  text-transform: none !important;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased; }
+
+[data-icon]:before {
+  content: attr(data-icon); }
+
+[class*=icomoon-]:before, [class*=icon-]:before, [class*=iconDecorative--]:before, [class*=iconDecorative-]:before {
+  margin-right: 1.33em; }
+
+[class*=iconDecorativeAfter--]:after, [class*=iconDecorativeAfter-]:after {
+  margin-left: .33em; }
+
+.icomoon-menu:before, .icon-menu:before {
+  content: "\4d\65\6e\75"; }
+
+.icomoon-envelope:before {
+  content: "\45\6e\76\65\6c\6f\70\65"; }
+
+.icomoon-email:before, .icon-email:before {
+  content: "\45\6d\61\69\6c"; }
+
+.icomoon-arrow-right-info:before, .icon-arrow-right-info:before {
+  content: "\4d\6f\72\65"; }
+
+.icomoon-arrow-double-up:before, .icon-arrow-double-up:before {
+  content: "\55\70"; }
+
+.icomoon-arrow-double-down:before, .icon-arrow-double-down:before {
+  content: "\4f\70\65\6e"; }
+
+.icomoon-home:before, .icon-home:before {
+  content: "\48\6f\6d\65"; }
+
+.icomoon-phone:before, .icon-phone:before {
+  content: "\50\68\6f\6e\65"; }
+
+.icomoon-images:before, .icon-images:before {
+  content: "\49\6d\61\67\65\73"; }
+
+.icomoon-search:before, .icon-search:before {
+  content: "\53\65\61\72\63\68"; }
+
+.icomoon-zoom-in:before, .icon-zoom-in:before {
+  content: "\45\6e\6c\61\72\67\65"; }
+
+.icomoon-youtube:before, .icon-youtube:before {
+  content: "\59\6f\75\74\75\62\65"; }
+
+.icomoon-earth:before, .icon-earth:before {
+  content: "\45\61\72\74\68"; }
+
+.icomoon-close:before, .icon-close:before {
+  content: "\43\6c\6f\73\65"; }
+
+.icomoon-settings:before, .icon-settings:before {
+  content: "\53\65\74\74\69\6e\67\73"; }
+
+.icomoon-top:before, .icon-top:before {
+  content: "\54\6f\70"; }
+
+.icomoon-more:before, .icon-more:before {
+  content: "\4e\65\78\74"; }
+
+.icomoon-back:before, .icon-back:before {
+  content: "\42\61\63\6b"; }
+
+.icomoon-external-link:before, .icon-external-link:before {
+  content: "\4f\66\66\73\69\74\65"; }
+
+.icomoon-twitter:before, .icon-twitter:before {
+  content: "\54\77\69\74\74\65\72"; }
+
+.icon-twitter {
+  color: #00ADBF !important; }
+
+.icomoon-facebook:before, .icon-facebook:before {
+  content: "\46\61\63\65\62\6f\6f\6b"; }
+
+.icon-facebook {
+  color: #3b5998 !important; }
+
+.icomoon-google:before, .icon-google:before {
+  content: "\47\6f\6f\67\6c\65"; }
+
+.icomoon-calendar:before, .icon-calendar:before {
+  content: "\43\61\6c\65\6e\64\61\72"; }
+
+.icomoon-file:before, .icon-file:before {
+  content: "\46\69\6c\65"; }
+
+.icomoon-apple:before, .icon-apple:before {
+  content: "\41\70\70\6c\65"; }
+
+.iconDecorative-menu:before {
+  content: "\e600"; }
+
+.iconDecorative-envelope:before {
+  content: "\e601"; }
+
+.iconDecorative-email:before {
+  content: "\e602"; }
+
+.iconDecorative-arrow-right-info:before {
+  content: "\e603"; }
+
+.iconDecorative-arrow-double-up:before {
+  content: "\e604"; }
+
+.iconDecorative-arrow-double-down:before {
+  content: "\e605"; }
+
+.iconDecorative-home:before {
+  content: "\e606"; }
+
+.iconDecorative-phone:before {
+  content: "\e607"; }
+
+.iconDecorative--images:before, .iconDecorative-images:before {
+  content: "\e608"; }
+
+.iconDecorative-search:before {
+  content: "\e609"; }
+
+.iconDecorative-zoom-in:before {
+  content: "\e60a"; }
+
+.iconDecorative-youtube:before {
+  content: "\e60b"; }
+
+.iconDecorative-earth:before {
+  content: "\e60c"; }
+
+.iconDecorative-close:before {
+  content: "\e60d"; }
+
+.iconDecorative-settings:before {
+  content: "\e60e"; }
+
+.iconDecorative-top:before {
+  content: "\e60f"; }
+
+.iconDecorative-more:before, .iconDecorativeAfter--more:after {
+  content: "\e610"; }
+
+.iconDecorative-back:before {
+  content: "\e611"; }
+
+.iconDecorative-external-link:before {
+  content: "\e612"; }
+
+.iconDecorative-twitter:before {
+  content: "\e613"; }
+
+.iconDecorative-facebook:before {
+  content: "\e614"; }
+
+.iconDecorative-google:before {
+  content: "\e615"; }
+
+.iconDecorative-calendar:before {
+  content: "\e616"; }
+
+.iconDecorative-document:before {
+  content: "\e617"; }
+
+.iconDecorative-apple:before {
+  content: "\e618"; }

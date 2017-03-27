@@ -1,0 +1,322 @@
+
+
+/*	Move the following variables to config	*/
+
+$mobileSearchBackground: #aaa;
+$mobileMenuBackground: #666;
+$mobileMenuLinkColor: #aaa;
+
+/*	MobileHeader
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	============
+	
+	Contains the styling for the search, navigation dropdown, and Vassar link at smaller screen sizes
+	*/
+
+
+/*	Masthead
+	-------- */
+
+.u-Masthead__vassar {
+	height: $mobileHeaderHeight;
+	@include v-pixel-fallback("font-size", 1rem);
+	font-weight: bold;
+	margin: 0;
+	position: absolute;
+	top: $mobileHeaderDistanceFromTop;
+	left: 0;
+	@include v-pixel-fallback("padding-left", 1rem);
+	width: 100%;
+	display: table;
+	background: $mobileHeaderBg;
+}
+.u-Masthead__vassar--link {
+	display: table-cell;
+	vertical-align: middle;	
+}
+
+
+/*	Put this in a masthead file */
+
+@media all and (min-width: $small) {
+	.u-Masthead__vassar {
+		position: static;
+		display: auto;
+		height: auto;
+		background: none;
+		width: auto;
+	}
+		.u-Masthead__vassar--link {
+			display: inline;
+		}
+	.u-Masthead__vassar--link.icon-back:before {
+		content: "";
+		margin: 0;
+	}
+}
+
+
+/*	Mobile search
+	------------- */
+
+/*	Base styles
+	........... */
+
+#search {
+	position: absolute;
+	top: 0;
+	padding: 0;
+	background: #eee;
+}
+.u-Search__button {
+	@include v-pixel-fallback("top", $mobileHeaderDistanceFromTop);
+	@include v-pixel-fallback("right", $mobileHeaderButtonWidth);
+	background: $searchAndMenuBtnBackground;
+	color: $searchAndMenuBtnColor;
+	width: $mobileHeaderButtonWidth;
+	text-align: center;
+	border-right: 1px solid #fff;
+	@include v-pixel-fallback("font-size", $iconFontSize);
+	z-index: 2;
+}
+.u-Search__button,
+.u-Search__cancel {
+	height: $mobileHeaderHeight;
+	line-height: $mobileHeaderHeight;
+}
+.u-Search__cancel {
+	@include v-pixel-fallback("font-size", 1rem);
+}
+.u-Search__submit {
+	left: auto;
+	top: 0;
+	bottom: 0;
+	height: auto;
+	position: relative;
+}
+.u-Search__field {
+	height: auto;
+	font-family: $sans-serif;
+	width: 100%;
+	@include v-pixel-fallback("padding", 2%);
+}
+.u-Search__field,
+.u-Search__submit,
+.u-Search__cancel {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+}
+.u-Search__submit,
+.u-Search__field,
+input[type="search"] {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.u-Search__form:before {
+	content: "";
+	position: absolute;
+	height: $mobileHeaderHeight;
+	border-left: $searchFieldBorder--activated;
+	top: 0;
+	bottom: 0;
+	right: $mobileHeaderButtonWidth*2;
+	z-index: 9;
+}
+.u-Search__field:focus,
+.u-Search__submit:focus {
+	z-index: 0;
+	position: inherit;
+}
+.u-Search__field,
+input[type="search"],
+#search:target .u-Search__field {
+	border-radius: 0 !important;
+	-webkit-border-radius: 0 !important;
+	-moz-border-radius: 0 !important;
+}
+
+
+
+/*	When the search form is displayed
+	................................. */
+
+#search:target {
+	padding: 0;
+	width: 100%;
+	background: $mobileSearchBackground;
+	z-index: 9;
+	@include v-pixel-fallback("max-height", $mobileHeaderHeight);
+	@include v-pixel-fallback("height", $mobileHeaderHeight);
+}
+#search:target .u-Search__submit,
+#search:target .u-Search__cancel {
+	color: $searchAndMenuBtnColor--activated;
+	background: $searchAndMenuBtnBackground--activated;
+	position: absolute;
+	width: $mobileHeaderButtonWidth;
+	text-align: center;
+	padding: 0;
+	@include v-pixel-fallback("line-height", $mobileHeaderHeight);
+}
+#search:target .u-Search__field {
+	content: "bob" !important;
+	position: absolute;
+	left: 0;
+	border: $searchFieldBorder--activated;
+}
+#search:target .u-Search__cancel {
+	@include v-pixel-fallback("right", 0);
+}
+#search:target .u-Search__submit {
+	@include v-pixel-fallback("right", $mobileHeaderButtonWidth);
+	@include v-pixel-fallback("font-size", $iconFontSize);
+}
+#search:target .u-Search__submit:before {
+	position: absolute;
+	content: "";
+	top: 0;
+	bottom: 0;
+	width: 2px;
+	border-left: $searchFieldBorder--activated;
+}
+
+
+
+/*	Navigation
+	---------- */
+
+.ac-NavAnchor--menu {
+	position: absolute;
+	right: 0;
+	@include v-pixel-fallback("top", $mobileHeaderDistanceFromTop);
+	height: $mobileHeaderHeight;
+	width: $mobileHeaderButtonWidth;
+	line-height: $mobileHeaderHeight;
+/*	font-size: $iconFontSize; */
+	z-index: 9;
+	background: $searchAndMenuBtnBackground;
+	text-align: center;
+	color: $searchAndMenuBtnColor;
+
+	font-family: $sans-serif !important;
+	@include v-pixel-fallback("font-size", 1rem);
+	font-weight: bold;
+}
+.u-NavSite__item {
+	@extend .sans-serif;
+	line-height: 110%;
+	font-weight: 100;
+	font-size: ms(.5);
+}
+.u-NavSite__itemContainer .u-NavSite__itemContainer .u-NavSite__item {
+	font-size: .9em;
+}
+.u-NavSite__itemContainer {
+	margin: 0;
+}
+.u-NavSite__itemContainer .u-NavSite__itemContainer {
+	padding-left: 0;
+}
+.u-NavSite__item {
+	padding: .25em .75em;
+}
+.u-NavSite__level {
+	margin-left: 1em;
+}
+.ac-NavAnchor.ac-NavAnchor--top {
+	padding: 1em;
+	display: block;
+	text-align: center;
+}
+
+
+
+#navigation:target {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	padding-top: $mobileHeaderHeight;
+	height: auto;
+	background: transparent;
+}
+#navigation:target .u-NavSite__level--1 {
+	background: $mobileMenuBackground;
+	margin: 0;
+	padding: 6% 4%;
+}
+#navigation:target .u-NavSite__level--1 .u-NavSite__item {
+	color: $mobileMenuLinkColor;
+}
+
+#navigation:target .ac-NavAnchor--top {
+	position: absolute;
+	right: 0;
+	top: 0;
+
+/*	@include v-pixel-fallback("top", $mobileHeaderDistanceFromTop); */
+
+	height: $mobileHeaderHeight;
+	width: $mobileHeaderButtonWidth;
+	line-height: $mobileHeaderHeight;
+	font-size: $iconFontSize;
+	z-index: 9;
+	background: $mobileMenuBackground;
+	text-align: center;
+	color: $searchAndMenuBtnColor;
+	font-size: 1px;
+/*	text-indent: -99em; */
+}
+
+
+#navigation:target .ac-NavAnchor--top:before {
+	content: "Menu";
+	content: "Close";
+	font-size: 1rem !important;
+/*	font-family: $sans-serif !important; */
+	font-weight: bold;
+	margin: 0;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	line-height: $mobileHeaderHeight;	
+	font-size: $iconFontSize;
+}
+
+
+/*#navigation:target:before {
+	content: "Menu";
+	position: absolute;
+	height: $mobileHeaderHeight;
+	@include v-pixel-fallback("font-size", 1rem);
+	font-weight: bold;
+	top: -$mobileHeaderHeight;
+	left: 0;
+	@include v-pixel-fallback("padding-left", 1rem);
+	border: 1px solid #f00;
+	line-height: $mobileHeaderHeight;
+}*/
+
+

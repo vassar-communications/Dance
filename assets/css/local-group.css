@@ -1,0 +1,1074 @@
+@charset "UTF-8";
+/*	CONFIG
+	====== */
+/*	LAYOUT
+	====== */
+/*	Site breakpoints
+	----------------- */
+/*	Tell Jeff to add to config
+	-------------------------- */
+/*	Up until this point, the search box will be positioned
+	over the masthead, so as not to overlap it. This point
+	depends on how wide the site masthead is. Keep increasing it
+	until the search box no longer overlaps the masthead.
+*/
+/* end Jeff add ------------ */
+/*	TYPOGRAPHY
+	========== */
+/*	COLORS
+	====== */
+/*	Basic link colors
+	----------------- */
+/* $linkColorVisited: #AB9F84; */
+/*	Google search-results-specific colors
+	------------------------------------- */
+/* The color of the URL that appears below each result title */
+/* Currently being overridden by something in Google's default CSS */
+/* The numbers that represent pages of search results */
+/*	Basic button bg colors
+	----------------- */
+/*	Mobile search colors
+	-------------------- */
+/*	Mobile menu colors
+	------------------ */
+/*	Mobile search and menu colors
+	----------------------------- */
+/* The background color of a button, when activated */
+/*	Mobile search colors
+	-------------------- */
+/* The background of the "Vassar College" area */
+/* The background of the search and menu buttons */
+/* The color of the search icon and Menu text */
+/* The color of the space between search and menu */
+.ac-visuallyHidden {
+  border: 0 !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px !important;
+  padding: 0 !important;
+  overflow: hidden;
+  position: absolute !important;
+  width: 1px !important; }
+
+.noBullets {
+  margin: 0;
+  padding: 0; }
+
+.noBullets li {
+  list-style: none; }
+
+/* @import "reset"; */
+/*	CONFIG
+	====== */
+/*	LAYOUT
+	====== */
+/*	Site breakpoints
+	----------------- */
+/*	Tell Jeff to add to config
+	-------------------------- */
+/*	Up until this point, the search box will be positioned
+	over the masthead, so as not to overlap it. This point
+	depends on how wide the site masthead is. Keep increasing it
+	until the search box no longer overlaps the masthead.
+*/
+/* end Jeff add ------------ */
+/*	TYPOGRAPHY
+	========== */
+/*	COLORS
+	====== */
+/*	Basic link colors
+	----------------- */
+/* $linkColorVisited: #AB9F84; */
+/*	Google search-results-specific colors
+	------------------------------------- */
+/* The color of the URL that appears below each result title */
+/* Currently being overridden by something in Google's default CSS */
+/* The numbers that represent pages of search results */
+/*	Basic button bg colors
+	----------------- */
+/*	Mobile search colors
+	-------------------- */
+/*	Mobile menu colors
+	------------------ */
+/*	Mobile search and menu colors
+	----------------------------- */
+/* The background color of a button, when activated */
+/*	Mobile search colors
+	-------------------- */
+/* The background of the "Vassar College" area */
+/* The background of the search and menu buttons */
+/* The color of the search icon and Menu text */
+/* The color of the space between search and menu */
+.ac-visuallyHidden {
+  border: 0 !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px !important;
+  padding: 0 !important;
+  overflow: hidden;
+  position: absolute !important;
+  width: 1px !important; }
+
+.noBullets {
+  margin: 0;
+  padding: 0; }
+
+.noBullets li {
+  list-style: none; }
+
+/*	LAYOUT
+	====== */
+/*	Description: Masthead is left-aligned, narrow, and square, similar to Offices or Urban Studies.
+
+	Recommended for:
+
+	 - Departments with short names (Dance, Art, Math)
+	 - Designs where the department name is set in a very condensed font 
+
+	The following explains more about this layout, and includes 
+	some variables for quick changes. If they're not useful or are slow
+	to work with, go ahead and work with the CSS directly.
+
+	Notes:
+
+	 - You might need to adjust the margin pushing down the navigation 
+	 column. The header is absolutely positioned, so it won't push down 
+	 the nav. The height of the masthead will vary depending on what 
+	 typeface you're using, other design decisions, etc, so you'll 
+	 need to adjust the top margin of the nav to not overlap the header. */
+/*	 
+	 - The width of the search field should match the width of the side column
+	 content; in other words, the left and right edges of the search field should
+	 align with the content of the sidebar. 
+
+*/
+/*	↑ This determines the width of both the nav and the masthead, at the largest layout size. In this layout, the	masthead is as wide as the nav, so it makes sense to synchronize them.  */
+/*	apply a natural box layout model to all elements
+	www.paulirish.com/2012/box-sizing-border-box-ftw/ */
+/* This box layout is already included in basic.scss - redundant? */
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.u-lFooter {
+  clear: both; }
+
+/*.u-pageTitle:nth-of-type(1) {
+	display: none;
+}*/
+h2 {
+  margin-top: 0; }
+
+body {
+  /*	padding: 8%; */
+  position: relative; }
+
+.u-lFooter {
+  padding: 4% 2%;
+  margin-top: 2rem; }
+
+.u-lAside {
+  padding-right: 0; }
+
+.galleria--content {
+  margin: 0 0 2.5%; }
+
+.u-NavSite,
+.u-lContent,
+.u-lAside {
+  padding: 4%; }
+
+.u-lHeader {
+  height: 12rem; }
+
+/*	SMALL
+	----- */
+@media all and (min-width: 600px) {
+  .u-lMain {
+    width: 68%;
+    float: right;
+    /*		margin-top: 2rem; */
+    margin-right: 2%;
+    position: relative;
+    z-index: 9; }
+
+  /*
+  	.u-lMain:after {
+  		content: "";
+  	    position: absolute;
+  	    top: 0;     
+  	    bottom: 14em;
+  	    right: 0;
+  	    left: auto;
+  	}
+  */
+  .u-pageHome .u-lMain {
+    padding-bottom: 6rem; }
+
+  .u-lContent,
+  .u-lAside {
+    padding: 4%; }
+
+  .u-lAside {
+    max-width: 20em; }
+
+  .u-lContent {
+    padding-top: 5.6rem; }
+
+  .u-NavSite {
+    width: 30%;
+    float: left;
+    padding: 3%;
+    margin-top: 12rem; }
+
+  .u-lHeader {
+    padding: 3%;
+    position: absolute;
+    width: 28%; }
+
+  .u-Search {
+    left: auto;
+    right: 4.7%;
+    z-index: 22;
+    position: absolute;
+    top: 2.6rem;
+    width: 12em; }
+
+  .u-Masthead__vassar {
+    height: 1em; }
+
+  /*
+  	#search {
+  		left: 1rem;
+  		right: auto;
+  		position: absolute;
+  		top: 1rem;
+  	}
+  
+  */ }
+/*	MEDIUM
+	------ */
+@media all and (min-width: 800px) {
+  html {
+    padding: 2%;
+    padding-top: 1em; }
+
+  .u-lMain {
+    width: 70%; }
+
+  .u-NavSite {
+    width: 28%; }
+
+  body:after {
+    content: "";
+    top: 0;
+    right: 2%;
+    bottom: 14em;
+    background: #fff;
+    position: absolute;
+    left: 28%; }
+
+  .u-lContent {
+    position: relative; }
+
+  .u-lHeader {
+    padding-top: 2rem;
+    z-index: 0; }
+
+  .u-lContent {
+    z-index: 9; }
+
+  /*	body {
+  		padding-top: 6%;
+  	} */ }
+/*	LARGE
+	----- */
+@media all and (min-width: 1024px) {
+  body {
+    max-width: 1200px;
+    margin: 0 auto; }
+
+  .u-biosInner .u-NavSite,
+  .u-NavSite {
+    width: 24%; }
+
+  body:after {
+    left: 24%; }
+
+  .u-lMain,
+  .u-biosInner .u-lMain {
+    width: 74%;
+    margin-right: 2%; }
+
+  .u-lAside {
+    width: 30%;
+    float: right;
+    padding-top: 6rem;
+    padding-right: 2%; }
+
+  .u-lContent {
+    width: 70%;
+    float: left;
+    padding-right: 2%;
+    padding-top: 2.6rem; }
+
+  body {
+    padding-top: 0; }
+
+  .u-Search {
+    width: 16.3%;
+    margin-top: 0;
+    position: absolute;
+    left: auto;
+    right: 6.5%; } }
+/*
+@media all and (min-width: $small) and (max-width: $pointAtWhichSearchMovesToRight) {
+	.u-lHeader {
+		padding-top: 4rem;
+		padding-bottom: 1.75rem;
+	}
+}
+*/
+@media all and (min-width: 700px) {
+  .u-Search__button, .u-Search__cancel {
+    display: none; } }
+/*	Dance-specific */
+@media all and (min-width: 600px) {
+  html {
+    padding: 0; } }
+@media all and (min-width: 800px) {
+  .u-Masthead__siteName {
+    margin-top: 3% !important;
+    margin-bottom: .1em; } }
+/*	Bios
+	---- */
+.u-Bio__contactItem {
+  margin: 0; }
+
+.ac-NavAnchor.ac-NavAnchor--top {
+  /*	display: none !important; */ }
+
+/*	CONFIG
+	====== */
+/*	LAYOUT
+	====== */
+/*	Site breakpoints
+	----------------- */
+/*	Tell Jeff to add to config
+	-------------------------- */
+/*	Up until this point, the search box will be positioned
+	over the masthead, so as not to overlap it. This point
+	depends on how wide the site masthead is. Keep increasing it
+	until the search box no longer overlaps the masthead.
+*/
+/* end Jeff add ------------ */
+/*	TYPOGRAPHY
+	========== */
+/*	COLORS
+	====== */
+/*	Basic link colors
+	----------------- */
+/* $linkColorVisited: #AB9F84; */
+/*	Google search-results-specific colors
+	------------------------------------- */
+/* The color of the URL that appears below each result title */
+/* Currently being overridden by something in Google's default CSS */
+/* The numbers that represent pages of search results */
+/*	Basic button bg colors
+	----------------- */
+/*	Mobile search colors
+	-------------------- */
+/*	Mobile menu colors
+	------------------ */
+/*	Mobile search and menu colors
+	----------------------------- */
+/* The background color of a button, when activated */
+/*	Mobile search colors
+	-------------------- */
+/* The background of the "Vassar College" area */
+/* The background of the search and menu buttons */
+/* The color of the search icon and Menu text */
+/* The color of the space between search and menu */
+.ac-visuallyHidden {
+  border: 0 !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px !important;
+  padding: 0 !important;
+  overflow: hidden;
+  position: absolute !important;
+  width: 1px !important; }
+
+.noBullets {
+  margin: 0;
+  padding: 0; }
+
+.noBullets li {
+  list-style: none; }
+
+/*	COLOR
+	===== */
+a {
+  text-decoration: none;
+  border: none; }
+
+a, a:link {
+  color: #D96729; }
+
+a:visited {
+  color: #8C614A; }
+
+a:hover, a:active {
+  color: #29C1D9; }
+
+html {
+  background: #000 url("../images/css/background-bw.jpg") no-repeat fixed;
+  background-size: contain; }
+
+.u-Masthead__vassar {
+  background: transparent; }
+
+@media all and (min-width: 800px) {
+  html {
+    background: #000 url("../images/css/background-bw.jpg") no-repeat fixed;
+    background-size: cover; } }
+a.u-Masthead__siteName--link,
+a.u-Masthead__vassar--link {
+  color: rgba(255, 100, 118, 0.6);
+  color: #fff; }
+
+.u-lContent {
+  background: #fff; }
+
+@media all and (min-width: 800px) {
+  .u-Masthead__vassar {
+    position: relative !important; } }
+/*
+.u-lAside {
+	color: #ddd;
+}
+	.u-lAside a {
+		color: #ddd;
+	}
+*/
+.u-lMain {
+  background: #fff; }
+
+tbody tr:nth-child(odd) {
+  background-color: #e7e7e7; }
+
+tbody td,
+tbody th {
+  border: 1px solid #ccc; }
+
+@media all and (min-width: 600px) {
+  .u-Search__field,
+  .u-Search__submit {
+    background: transparent;
+    border: none; }
+
+  .u-Search__form {
+    border: 1px solid #aaa;
+    border: 1px solid rgba(0, 0, 0, 0.2); }
+
+  .u-Search__submit svg {
+    fill: #888; }
+
+  #navigation:target .u-NavSite__level--1 {
+    background: rgba(0, 0, 0, 0.5); } }
+@media all and (min-width: 1024px) {
+  .u-Search__field,
+  .u-Search__submit {
+    background: transparent;
+    border: none; } }
+/*	Masthead
+	-------- */
+.u-Masthead__vassar--link {
+  color: rgba(255, 255, 255, 0.6);
+  text-transform: uppercase;
+  letter-spacing: 1px; }
+
+.u-Masthead__siteName--link,
+.u-Masthead__vassar--link {
+  transition: color 1s ease; }
+
+.u-Masthead__siteName--link:hover,
+.u-Masthead__vassar--link:hover {
+  color: rgba(255, 255, 255, 0.1); }
+
+@media all and (min-width: 600px) {
+  .u-Search__submit {
+    color: #ddd;
+    background: transparent; } }
+/*	News
+	---- */
+.u-ArticleListItem .u-ArticleListItem__link {
+  color: #000; }
+
+.u-ArticleListItem .u-ArticleListItem__link:hover {
+  color: #888; }
+
+/*	Navigation
+	---------- */
+.u-NavSite__level .u-NavSite__level {
+  border-left: 1px solid rgba(255, 255, 255, 0.4);
+  margin-bottom: .15em; }
+
+.u-NavSite__level .u-NavSite__item,
+.u-NavSite__level .u-NavSite__item:link,
+.u-NavSite__level .u-NavSite__item:visited {
+  color: #aaa; }
+
+.u-NavSite__level .u-NavSite__item.u-NavSite__item--isCurrent,
+.u-NavSite__level .u-NavSite__item:hover,
+.u-NavSite__level .u-NavSite__item:active {
+  color: #fff;
+  text-shadow: 0 0 40px #fff; }
+
+.u-NavSite__item.u-NavSite__item--facebook.icon-facebook,
+.u-NavSite__item.u-NavSite__item--twitter.icon-twitter {
+  color: #888; }
+
+.u-NavSite__item.u-NavSite__item--facebook:hover,
+.u-NavSite__item.u-NavSite__item--twitter:hover {
+  color: #fff; }
+
+.u-NavSite {
+  overflow: hidden; }
+
+.u-NavSite__level--1 {
+  box-shadow: 0 0 60px 0 black;
+  -webkit-box-shadow: 0 0 60px 0 black;
+  -moz-box-shadow: 0 0 60px 0 black;
+  background: rgba(0, 0, 0, 0.5); }
+
+/*	Sidebar modules
+	--------------- */
+.Module__header {
+  border-bottom: 2px solid #eee;
+  padding-bottom: .25em; }
+
+/*	Footer
+	------ */
+.u-lFooter {
+  color: #888; }
+
+/*	Search
+	------ */
+.u-Search__submit {
+  background: #444; }
+
+@media all and (min-width: 600px) {
+  .u-Search__submit {
+    background: none; } }
+/*	Social
+	------ */
+.u-NavSite__item.u-NavSite__item--twitter,
+.u-NavSite__item.u-NavSite__item--facebook {
+  color: #aaa !important; }
+
+/*	CONFIG
+	====== */
+/*	LAYOUT
+	====== */
+/*	Site breakpoints
+	----------------- */
+/*	Tell Jeff to add to config
+	-------------------------- */
+/*	Up until this point, the search box will be positioned
+	over the masthead, so as not to overlap it. This point
+	depends on how wide the site masthead is. Keep increasing it
+	until the search box no longer overlaps the masthead.
+*/
+/* end Jeff add ------------ */
+/*	TYPOGRAPHY
+	========== */
+/*	COLORS
+	====== */
+/*	Basic link colors
+	----------------- */
+/* $linkColorVisited: #AB9F84; */
+/*	Google search-results-specific colors
+	------------------------------------- */
+/* The color of the URL that appears below each result title */
+/* Currently being overridden by something in Google's default CSS */
+/* The numbers that represent pages of search results */
+/*	Basic button bg colors
+	----------------- */
+/*	Mobile search colors
+	-------------------- */
+/*	Mobile menu colors
+	------------------ */
+/*	Mobile search and menu colors
+	----------------------------- */
+/* The background color of a button, when activated */
+/*	Mobile search colors
+	-------------------- */
+/* The background of the "Vassar College" area */
+/* The background of the search and menu buttons */
+/* The color of the search icon and Menu text */
+/* The color of the space between search and menu */
+.ac-visuallyHidden {
+  border: 0 !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px !important;
+  padding: 0 !important;
+  overflow: hidden;
+  position: absolute !important;
+  width: 1px !important; }
+
+.noBullets {
+  margin: 0;
+  padding: 0; }
+
+.noBullets li {
+  list-style: none; }
+
+/*	TYPOGRAPHY
+	========== */
+/*	Modular scales mixin from:
+	https://github.com/Team-Sass/modular-scale */
+.ac-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  visibility: hidden; }
+
+/*	basic.css overrides
+	------------------- */
+address, caption, cite, code, dfn, h1, h2, h3, h4, h5, h6, pre, strong, th, var, b,
+.u-VCard__adr b, .u-VCard__info b, .u-VCard__org {
+  font-weight: 300; }
+
+mark, strong, .ac-skipLink:active, .ac-skipLink:focus {
+  font-weight: 500; }
+
+.u-lMain {
+  font-size: 100%; }
+
+.u-lContent {
+  font-size: 1em; }
+
+/*	Elements
+	-------- */
+html {
+  font-family: "merriweather";
+  font-weight: 300;
+  line-height: 150%; }
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 130%; }
+
+h1 {
+  font-size: 1.8em; }
+
+h2 {
+  font-size: 1.6em;
+  font-family: "jaf-bernina-sans";
+  line-height: 110%;
+  font-weight: bold; }
+
+h3 {
+  font-size: 1.1em;
+  font-weight: 700;
+  font-family: "merriweather"; }
+
+h4 {
+  font: bold 1em/1.1 "jaf-bernina-sans"; }
+
+h5 {
+  font-size: 1em;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase; }
+
+h6 {
+  font-size: 1em;
+  font-family: "merriweather";
+  font-style: italic;
+  font-weight: 500; }
+
+p,
+ol,
+ul,
+blockquote,
+dt,
+dd {
+  font-family: "merriweather";
+  font-weight: 100;
+  font-size: 1em;
+  margin-bottom: .66em;
+  line-height: 1.5; }
+
+p {
+  margin-top: 0; }
+
+ul,
+ol {
+  margin: .66em 0; }
+
+th {
+  font-weight: 500; }
+
+td {
+  font-weight: 300; }
+
+/* This mixin keeps font-sizes in nested lists from 
+growing exponentially. The font-size is based on the 
+current Modular Scale setting above. Adjust accordingly */
+ul,
+ol {
+  font-size: 1em; }
+
+/*	Main page content
+	----------------- */
+.intro * {
+  font-family: "merriweather";
+  font-weight: 100;
+  line-height: 116%; }
+
+.u-pageTitle {
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #eee;
+  margin-top: 2rem; }
+
+/*	u-lAside sidebar styles
+	----------------------- */
+.u-lAside {
+  font-family: "jaf-bernina-sans";
+  line-height: 1.3; }
+
+.u-lAside h2, .u-lAside h3, .u-lAside h4, .u-lAside h5, .u-lAside h6 {
+  margin-top: 1em; }
+.u-lAside h1 {
+  font-size: 1.1em; }
+.u-lAside h2 {
+  font-size: 1em; }
+.u-lAside h3 {
+  font-size: .9em; }
+.u-lAside h4 {
+  font-size: .9em; }
+.u-lAside h5 {
+  font-size: .8em; }
+.u-lAside h6 {
+  font-size: .8em; }
+.u-lAside p,
+.u-lAside ol,
+.u-lAside ul {
+  font-size: .9em; }
+
+.Module--sidebar b, .Module--sidebar p, .Module--sidebar dd, .Module--sidebar dt, .Module--sidebar .Module__link, .Module--sidebar .moreLink {
+  font-family: "jaf-bernina-sans";
+  font-weight: normal; }
+
+.u-Masthead__siteName {
+  font-family: "arial narrow";
+  text-transform: uppercase;
+  font-size: 5rem;
+  padding-top: 6rem;
+  padding-left: 3.5%; }
+
+.wf-active .u-Masthead__siteName {
+  font-family: "jaf-bernino-sans-comp";
+  text-transform: uppercase; }
+
+/*	Masthead
+	-------- */
+@media all and (min-width: 600px) {
+  .wf-active .u-Masthead__siteName {
+    font-size: 12vw;
+    padding: 0; }
+
+  .u-Masthead__vassar--link {
+    line-height: 1; } }
+@media all and (min-width: 1024px) {
+  .wf-active .u-Masthead__siteName {
+    font-size: 8rem; } }
+/*	Design-specific	*/
+.u-Masthead__siteName {
+  margin-top: 0;
+  line-height: .85; }
+
+/*	Announcements
+	------------- */
+.u-NewsList__heading--announcements {
+  font-family: "jaf-bernina-sans-condensed";
+  text-transform: uppercase;
+  letter-spacing: 2px; }
+
+/*	Social
+	------ */
+.u-NavSite__item--facebook,
+.u-NavSite__item--twitter {
+  font-weight: 500; }
+
+/*	News
+	---- */
+.u-ArticleListItem__summary {
+  margin-bottom: .25em; }
+
+.u-ArticleListItem__label--type {
+  margin-right: .3em; }
+
+.u-ArticleListItem__label--type:after {
+  content: "\00B7";
+  margin-left: .7em; }
+
+.u-ArticleListItem__label {
+  text-transform: uppercase; }
+
+.u-NavSite__item {
+  padding: .125em 0; }
+
+/*	Remove once announcements module stuff is centralized */
+.Module--news .Module__list {
+  margin: 0;
+  padding: 0; }
+.Module--news .Module__listItem {
+  list-style-type: none;
+  margin-bottom: 1em;
+  padding: .1em 0; }
+
+.Module--sidebar .Module__listItem {
+  padding: .1em 0; }
+
+.u-lFooter .u-VCard__adr {
+  margin-bottom: .4em; }
+.u-lFooter .u-VCard__org {
+  display: block;
+  font-family: "merriweather";
+  font-size: 1.1em;
+  margin-bottom: .6em; }
+.u-lFooter .u-VCard__info {
+  margin: 0; }
+.u-lFooter .u-VCard__label {
+  text-transform: uppercase;
+  letter-spacing: .1em; }
+
+.ac-visuallyHidden {
+  border: 0 !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px !important;
+  padding: 0 !important;
+  overflow: hidden;
+  position: absolute !important;
+  width: 1px !important; }
+
+.noBullets {
+  margin: 0;
+  padding: 0; }
+
+.noBullets li {
+  list-style: none; }
+
+/* @import "modules/_all"; */
+/*	CONFIG
+	====== */
+/*	LAYOUT
+	====== */
+/*	Site breakpoints
+	----------------- */
+/*	Tell Jeff to add to config
+	-------------------------- */
+/*	Up until this point, the search box will be positioned
+	over the masthead, so as not to overlap it. This point
+	depends on how wide the site masthead is. Keep increasing it
+	until the search box no longer overlaps the masthead.
+*/
+/* end Jeff add ------------ */
+/*	TYPOGRAPHY
+	========== */
+/*	COLORS
+	====== */
+/*	Basic link colors
+	----------------- */
+/* $linkColorVisited: #AB9F84; */
+/*	Google search-results-specific colors
+	------------------------------------- */
+/* The color of the URL that appears below each result title */
+/* Currently being overridden by something in Google's default CSS */
+/* The numbers that represent pages of search results */
+/*	Basic button bg colors
+	----------------- */
+/*	Mobile search colors
+	-------------------- */
+/*	Mobile menu colors
+	------------------ */
+/*	Mobile search and menu colors
+	----------------------------- */
+/* The background color of a button, when activated */
+/*	Mobile search colors
+	-------------------- */
+/* The background of the "Vassar College" area */
+/* The background of the search and menu buttons */
+/* The color of the search icon and Menu text */
+/* The color of the space between search and menu */
+.ac-visuallyHidden {
+  border: 0 !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px !important;
+  padding: 0 !important;
+  overflow: hidden;
+  position: absolute !important;
+  width: 1px !important; }
+
+.noBullets {
+  margin: 0;
+  padding: 0; }
+
+.noBullets li {
+  list-style: none; }
+
+/*	Remove this stuff after it goes in the central modules	*/
+/*	Search
+	------ */
+@media all and (min-width: 600px) {
+  .u-Search__submit {
+    padding: 0;
+    text-align: right; }
+
+  .u-Search__submit svg {
+    height: 2rem;
+    padding: .5rem; } }
+/*	News
+	---- */
+.u-ArticleListItem__summary {
+  font-weight: 100;
+  font-size: .9em;
+  line-height: 1.4; }
+
+.icon-envelope:before {
+  content: "" !important; }
+
+/*	Images
+	------ */
+.u-Figure {
+  overflow: hidden; }
+
+/*	Modules
+	------- */
+.Module--sidebar .Module__title,
+.Module--sidebar .Module__desc {
+  display: block; }
+
+.Module--sidebar .Module__title {
+  font-weight: bold;
+  line-height: 1.2;
+  margin-bottom: .25em; }
+
+.Module--sidebar .Module__desc {
+  line-height: 1;
+  font-size: .8rem; }
+
+.Module__header {
+  margin-bottom: .75em; }
+
+.Module__name {
+  margin-top: 0; }
+
+.Module--sidebar.Module--image {
+  max-width: 16em; }
+
+.Module--sidebar.Module--image .u-Figure {
+  margin: 0; }
+
+@media all and (min-width: 800px) {
+  .Module--sidebar.Module--image {
+    max-width: none; } }
+/*	Bios
+	---- */
+.u-BioList__name {
+  display: inline-block; }
+
+.u-Bio.u-Figure {
+  margin: 0; }
+
+.u-Bio.u-Figure img {
+  width: auto;
+  float: left;
+  margin-right: .5em; }
+
+/*	Nav
+	--- */
+.u-NavSite__level--1 {
+  position: relative; }
+
+body > p,
+div.myDIV,
+.myDIV {
+  display: none; }
+
+/* u-NewsTools in sidebar this class was previously in news-base.css */
+.icon_rss_link {
+  background: url(http://collegerelations.vassar.edu/centralincludes/css/icons/main_icons/rss_large.gif) no-repeat;
+  width: 32px;
+  height: 32px;
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  line-height: 0;
+  border: none; }
+
+/* this class should be removed from the u-NewsTools sidebar markup and replaced with .icon-mail which is already centralized */
+.icon-envelope:before {
+  content: "\45\6d\61\69\6c"; }
+
+/* these styles are meant to correspond with the classes added to the markup around images added to the body of a page via the CMS */
+.u-Figure {
+  margin: 2.5%; }
+
+.u-Figure__caption {
+  margin-top: 2.5%; }
+
+.u-Figure--full {
+  margin: 2.5% 0;
+  width: 100%; }
+
+.u-Figure--left {
+  float: left;
+  margin: .3em 2.5% 2.5% 0; }
+
+.u-Figure--right {
+  float: right;
+  margin: .3em 0 2.5% 2.5%; }
+
+.u-Figure--half {
+  width: 47.25%; }
+
+.u-Figure--third {
+  width: 30.83%; }
+
+.u-Figure--quarter {
+  width: 22.5%; }
+
+.u-Figure--center {
+  margin: 2.5% auto; }
+
+/* This news specifi class could be replaced with .u-Figure--left above */
+.u-ArticleListItem__thumbnail {
+  float: left;
+  margin: 0 2.5% 2.5% 0; }
+
+@media \0screen {
+  .u-lHeader {
+    float: left;
+    position: relative;
+    width: 18em; }
+
+  .u-Masthead__siteName {
+    font-size: 8em; }
+
+  .u-Masthead__vassar {
+    position: relative; }
+
+  .u-Search__form {
+    position: relative;
+    height: 2em;
+    background: #fff; } }

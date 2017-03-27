@@ -1,0 +1,146 @@
+
+/*	CONFIG
+	====== */
+
+
+
+
+/*	LAYOUT
+	====== */
+
+/*	Site breakpoints
+	----------------- */
+
+$tiny: 400px;
+$small: 600px;
+$medium: 800px;
+$large: 1024px;
+
+
+/*	Tell Jeff to add to config
+	-------------------------- */
+
+$searchBtnColor: #ddd;
+$searchBtnBg: transparent;
+
+
+$pointAtWhichSearchMovesToRight: 700px;
+/*	Up until this point, the search box will be positioned
+	over the masthead, so as not to overlap it. This point
+	depends on how wide the site masthead is. Keep increasing it
+	until the search box no longer overlaps the masthead.
+*/
+
+
+/* end Jeff add ------------ */
+
+
+/*	TYPOGRAPHY
+	========== */
+
+$serif: "merriweather";
+$sans-serif: "jaf-bernina-sans";
+$fontWeightNormal: 300;
+$fontWeightBold: 500;
+
+$iconFont: "icons" !important;
+
+
+
+/*	COLORS
+	====== */
+
+/*	Basic link colors
+	----------------- */
+
+$linkColor: #D96729;
+$linkColorHover: #29C1D9;
+$linkColorVisited: #8C614A;
+/* $linkColorVisited: #AB9F84; */
+$linkColorActive: #000;
+
+
+
+/*	Google search-results-specific colors
+	------------------------------------- */
+
+$gsUrl: #006621;				/* The color of the URL that appears below each result title */
+$gsSearchTermHighlighted: #f0f;	/* Currently being overridden by something in Google's default CSS */
+
+/* The numbers that represent pages of search results */
+$gsPaginationNumberBorderColor: #eee;
+$gsPaginationCurrentLinkBorder: #ccc;
+$gsPaginationCurrentLinkBackground: #eee;
+$gsPaginationHoverLinkBorder: #ccc;
+$gsPaginationHoverLinkBackground: #ddd;
+
+
+/*	Basic button bg colors
+	----------------- */
+$buttonBgColor: #ccc;
+$buttonBgColorHover: #999;
+$buttonBgColorVisited: #ccc;
+$buttonBgColorActive: #666; 
+$buttonBgColorFocus: #666; 
+
+$buttonLinkColor: #333;
+$buttonLinkColorHover: #fff;
+$buttonLinkColorVisited: #333;
+$buttonLinkColorActive: #ccc; 
+$buttonLinkColorFocus: #ccc; 
+
+$uniqueButtonBgColor: #666;
+$uniqueButtonBgColorHover: #999;
+$uniqueButtonBgColorVisited: #666;
+$uniqueButtonBgColorActive: #999; 
+$uniqueButtonBgColorFocus: #999; 
+
+$uniqueButtonLinkColor: #fff;
+$uniqueButtonLinkColorHover: #fff;
+$uniqueButtonLinkColorVisited: #fff;
+$uniqueButtonLinkColorActive: #ccc; 
+$uniqueButtonLinkColorFocus: #ccc;
+
+
+
+/*	Mobile search colors
+	-------------------- */
+
+$searchBtnColor--activated: #f00;
+
+
+/*	Mobile menu colors
+	------------------ */
+	
+$MenuBtnColor--activated: #000;
+$mobileMenuBackground: #666;
+$mobileMenuLinkColor: #aaa;
+
+
+/*	Mobile search and menu colors
+	----------------------------- */
+	
+$searchAndMenuBtnBackground--activated: #000;	/* The background color of a button, when activated */
+
+
+/*	Mobile search colors
+	-------------------- */
+
+$mobileHeaderBg: #000;					/* The background of the "Vassar College" area */
+$searchAndMenuBtnBackground: #000;		/* The background of the search and menu buttons */
+$searchAndMenuBtnColor: #d94;			/* The color of the search icon and Menu text */
+$searchBtnAndMenuBtnDividerColor: #000;	/* The color of the space between search and menu */
+
+
+$mobileSearchBackground: #f0f;
+
+
+
+
+
+
+
+
+
+
+

@@ -80,7 +80,10 @@ body {
 	height: 12rem;
 }
 	
-	
+.gf- .u-lHeader
+{
+    height: auto;
+}
 	
 	
 /*	SMALL
@@ -168,7 +171,8 @@ body {
 	.u-NavSite {
 		width: $leftColumnWidth_largeScreen;
 	}
-	body:after {
+	/* 
+    body:after {
 		content: "";
 		top: 0;
 		right: 2%;
@@ -177,7 +181,8 @@ body {
 		position: absolute;
 		left: $leftColumnWidth_largeScreen;	
 	}
-	.u-lContent {
+	*/
+    .u-lContent {
 		position: relative;
 	}
 	.u-lHeader {

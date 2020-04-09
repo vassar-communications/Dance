@@ -186,7 +186,7 @@ ol {
     padding-top: 2rem;
 }
 
-.wf-active .u-Masthead__siteName {
+.u-Masthead__siteName {
 	font-family: "jaf-bernino-sans-comp";
 	text-transform: uppercase;
 }
@@ -196,7 +196,7 @@ ol {
 	-------- */
 
 @media all and (min-width: $small) {
-	.wf-active .u-Masthead__siteName {
+	.u-Masthead__siteName {
 		font-size: 12vw;
 		padding: 0;
 	}
@@ -207,7 +207,7 @@ ol {
 	}	
 }
 @media all and (min-width: $large) {
-	.wf-active .u-Masthead__siteName {
+	.u-Masthead__siteName {
 		font-size: 8rem;
 	}
 }
